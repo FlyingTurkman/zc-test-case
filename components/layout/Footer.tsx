@@ -1,5 +1,6 @@
-
-
+import MessageIcon from '../icons/MessageIcon'
+import ProfileIcon from '../icons/ProfileIcon'
+import LocationIcon from '../icons/LocationIcon'
 
 
 
@@ -26,8 +27,10 @@ export default function Footer() {
                     <div
                     className="d-flex flex-row align-items-center gap-3 w-100"
                     >
-                        <div>
-                            I
+                        <div
+                        className='border-1 border-white footer-icon'
+                        >
+                            <ProfileIcon size={32} className='ms-2'/>
                         </div>
                         <div
                         className="d-flex flex-column gap-1"
@@ -46,8 +49,10 @@ export default function Footer() {
                     <div
                     className="d-flex flex-row align-items-center gap-3 w-100"
                     >
-                        <div>
-                            I
+                        <div
+                        className='border-1 border-white footer-icon'
+                        >
+                            <MessageIcon size={32} className='m-2'/>
                         </div>
                         <div
                         className="d-flex flex-column gap-1"
@@ -63,8 +68,10 @@ export default function Footer() {
                     <div
                     className="d-flex flex-row align-items-center gap-3 w-100"
                     >
-                        <div>
-                            I
+                        <div
+                        className='border-1 border-white footer-icon'
+                        >
+                            <LocationIcon size={32} className='ms-2 m-1 mt-2'/>
                         </div>
                         <div
                         className="d-flex flex-column gap-1"

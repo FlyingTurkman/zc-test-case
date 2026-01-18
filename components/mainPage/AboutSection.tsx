@@ -1,6 +1,6 @@
 import H2 from '../../components/ui/H2'
 import { buttonVariants } from '../ui/Button'
-
+import ArrowRightIcon from '../icons/ArrowRightIcon'
 
 
 
@@ -43,7 +43,7 @@ export default function AboutSection() {
                 href='#'
                 className={buttonVariants({ variant: 'primary', className: 'me-auto' })}
                 >
-                    Detay
+                    Detay <ArrowRightIcon className='ms-4'/>
                 </a>
             </div>
         </div>

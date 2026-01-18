@@ -1,6 +1,7 @@
 $primary-dark: #161F3C;
 $custom-danger: #DB0D15;
 $custom-primary: #273D89;
+$custom-muted: #F0F0F3;
 
 @use "bootstrap/scss/bootstrap" with (
     $primary: $custom-primary,
@@ -10,11 +11,12 @@ $custom-primary: #273D89;
     $theme-colors: (
         "primary": $custom-primary,
         "primary-dark": $primary-dark,
-        "danger": $custom-danger
+        "danger": $custom-danger,
+        "muted": $custom-muted
     )
 );
 
-$muted: #676A73;
+
 
 
 :root {
@@ -376,4 +378,18 @@ footer {
     height: 1px;
     width: 100%;
     background-color: var(--bs-border);
+}
+
+.promotion-icon {
+    transform: rotate(-45deg);
+}
+
+.footer-icon {
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%; 
+    aspect-ratio: 1/1;
+    padding: 8px;
 }

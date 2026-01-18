@@ -3,8 +3,8 @@ import surveyLeft from '../../src/assets/survey-left.png'
 import surveyRight from '../../src/assets/survey-right.png'
 import Button from '../ui/Button'
 import H2 from '../ui/H2'
-
-
+import promotion from '../../src/assets/promotion.png'
+import ArrowRightIcon from '../icons/ArrowRightIcon'
 
 
 
@@ -33,9 +33,10 @@ export default function SendSurvey() {
             <div
             className='d-flex flex-column gap-2 w-100 align-items-center justify-content-center'
             >
-                <div>
-                    M
-                </div>
+                <img
+                src={promotion}
+                className='promotion-icon'
+                />
                 <H2
                 className='text-center'
                 >
@@ -49,7 +50,7 @@ export default function SendSurvey() {
                 <Button
                 variant='danger'
                 >
-                    Makale Gönder
+                    Makale Gönder <ArrowRightIcon/>
                 </Button>
             </div>
             <div
