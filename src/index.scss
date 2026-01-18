@@ -49,6 +49,15 @@ $custom-muted: #F0F0F3;
     --bs-bdg-green: #A8B95E !important;
     --bs-bdg-green-text: #fff !important;
     --bs-border: #ACB1C6 !important;
+    --bs-tgl-primary: #fff !important;
+    --bs-tgl-primary-text: #273D89 !important;
+    --bs-tgl-hover: #273D89 !important;
+    --bs-tgl-hover-text: #fff !important;
+    --bs-tgl-active: #EBEFFF !important;
+    --bs-tgl-active-text: #273D89 !important;
+    --bs-tgl-active-border: #273D89 !important;
+    --bs-tgl-disabled: #ACB1C6 !important;
+    --bs-tgl-disabled-text: #E7EAF5 !important;
 }
 
 html {
@@ -63,9 +72,11 @@ a:hover {
     text-decoration: underline;
 }
 
+
+/* Button styles */
 button {
     border-width: 1px;
-    padding: 17px 24px 17px 15px !important;
+    padding: 17px 24px 17px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -136,6 +147,7 @@ button {
     text-align: center !important;
 }
 
+/* Typography styles */
 h1 {
     font-size: 32px !important;
     line-height: 38px !important;
@@ -183,6 +195,7 @@ h6 {
     padding-bottom: 1px !important;
 }
 
+/* Badge styles */
 .bdg-primary {
     background-color: var(--bs-bdg-primary);
     color: var(--bs-bdg-primary-text);
@@ -216,6 +229,37 @@ h6 {
     color: var(--bs-bdg-green-text);
     padding: 3px 10px 3px 10px !important;
     border-radius: 8px;
+}
+
+/* Toggle button styles */
+
+.tgl {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--bs-tgl-primary);
+    color: var(--bs-tgl-primary-text);
+}
+
+.tgl:disabled {
+    background-color: var(--bs-tgl-disabled);
+    color: var(--bs-tgl-disabled-text);
+}
+
+.tgl:disabled:hover {
+    background-color: var(--bs-tgl-disabled);
+    color: var(--bs-tgl-disabled-text);
+}
+
+.tgl.active {
+    background-color: var(--bs-tgl-active);
+    color: var(--bs-tgl-active-text);
+    border: 1px solid var(--bs-tgl-active-border);
+}
+
+.tgl:hover {
+    background-color: var(--bs-tgl-hover);
+    color: var(--bs-tgl-hover-text);
 }
 
 .logo {
