@@ -1,7 +1,7 @@
 import bgImage from '../../src/assets/hero-bg.png'
 import Button from '../ui/Button'
 import heroImage from '../../src/assets/dergi.png'
-
+import ArrowRightIcon from '../icons/ArrowRightIcon'
 
 
 
@@ -74,7 +74,7 @@ export default function Hero() {
                     variant='secondary'
                     className='me-auto my-5'
                     >
-                        Dergiyi Görüntüle
+                        Dergiyi Görüntüle <ArrowRightIcon/>
                     </Button>
                 </div>
                 <div

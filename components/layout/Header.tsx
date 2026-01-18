@@ -1,10 +1,10 @@
 import logo from '../../src/assets/logo.png'
 import { buttonVariants } from '../ui/Button'
-
-
-
-
-
+import MessageIcon from '../icons/MessageIcon'
+import PeopleIcon from '../icons/PeopleIcon'
+import AuthorIcon from '../icons/AuthorIcon'
+import SearchIcon from '../icons/SearchIcon'
+import HomeIcon from '../icons/HomeIcon'
 
 
 
@@ -34,15 +34,28 @@ export default function Header() {
                 >
                     <a
                     href='mailto:profuture@gmail.com'
-                    className='text-white'
+                    className='text-white d-flex flex-row gap-2 align-items-center'
                     >
+                        <MessageIcon
+                        size={18}
+                        />
                         <label>
                             profuture@gmail.com
                         </label>
                     </a>
-                    <label>
-                        asdasdasd
-                    </label>
+                    <div
+                    className='d-flex flex-row align-items-center gap-2'
+                    >
+                        <label>
+                            ISSN: <b>345-255</b>
+                        </label>
+                        <label>
+                            Başlangıç: <b>2025</b>
+                        </label>
+                        <label>
+                            Periyot: <b>Yılda 2 Sayı</b>
+                        </label>
+                    </div>
                 </div>
                 <div
                 className='d-flex flex-row align-items-center justify-content-between navbar h-100'
@@ -50,7 +63,7 @@ export default function Header() {
                     <a
                     href='/'
                     >
-                        <label>H</label>
+                        <HomeIcon size={24} color='#A8B95E'/>
                     </a>
                     <div
                     className='d-flex flex-row align-items-center gap-3'
@@ -84,19 +97,21 @@ export default function Header() {
                         href='#'
                         className={buttonVariants({ variant: 'secondary' })}
                         >
+                            <PeopleIcon size={24}/>
                             Dergi Kurulu
                         </a>
                         <a
                         href='#'
                         className={buttonVariants({ variant: 'alternative' })}
                         >
+                            <AuthorIcon size={24}/>
                             Yazar Rehberi
                         </a>
                         <a
                         href='#'
                         className={buttonVariants({ variant: 'primary', size: 'icon' })}
                         >
-                            S
+                            <SearchIcon size={24} className='d-flex ms-1 mt-1'/>
                         </a>
                     </div>
                 </div>
