@@ -15,7 +15,7 @@ export default function Card({ children, className, ...props }: CardProps) {
 
     return (
         <div
-        className={cn("card d-flex flex-row align-items-start gap-2 bg-white p-3", className)}
+        className={cn("card d-flex flex-lg-row flex-col align-items-start gap-2 bg-white p-3", className)}
         {...props}
         >
             {children}

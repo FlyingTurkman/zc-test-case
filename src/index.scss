@@ -361,10 +361,20 @@ main > .about-section {
 }
 
 .embla__slide {
-  flex: 0 0 33%;
-  min-width: 0;
-  padding: 12px;
+    flex: 0 0 100%;
+    min-width: 0;
+    padding: 12px;
 }
+
+@media (min-width: 992px) {
+    .embla__slide {
+      flex: 0 0 33%;
+      min-width: 0;
+      padding: 12px;
+    }
+}
+
+
 
 .carousel-content {
     margin-top: 50px;

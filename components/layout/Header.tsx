@@ -17,7 +17,7 @@ export default function Header() {
 
     return (
         <header
-        className="sticky-top d-flex flex-row bg-white"
+        className="sticky-top d-lg-flex d-none flex-row bg-white"
         >
             <div
             className="d-flex bg-primary h-full logo"
