@@ -1,8 +1,11 @@
 import Badge from '../ui/Badge'
 import Button from '../ui/Button'
-
-
-
+import PDFIcon from '../icons/PDFIcon'
+import PageIcon from '../icons/PageIcon'
+import AuthorIcon from '../icons/AuthorIcon'
+import MailIcon from '../icons/MailIcon'
+import DownloadIcon from '../icons/DownloadIcon'
+import EyeIcon from '../icons/EyeIcon'
 
 
 
@@ -36,9 +39,7 @@ export default function SurveyCard() {
                     <div
                     className='d-flex flex-row align-items-center gap-2'
                     >
-                        <div>
-                            PDF
-                        </div>
+                        <PDFIcon size={18}/>
                         <label
                         className='fw-bold survey-title'
                         >
@@ -51,8 +52,10 @@ export default function SurveyCard() {
                         <div
                         className='d-flex flex-row align-items-center gap-1'
                         >
-                            <div>
-                                D
+                            <div
+                            className='bg-muted rounded-circle'
+                            >
+                                <PageIcon size={20} className='mt-2 ms-2'/>
                             </div>
                             <label
                             className='survey-card-description'
@@ -63,8 +66,10 @@ export default function SurveyCard() {
                         <div
                         className='d-flex flex-row align-items-center gap-1'
                         >
-                            <div>
-                                D
+                            <div
+                            className='bg-muted rounded-circle'
+                            >
+                                <AuthorIcon size={16} className='m-1'/>
                             </div>
                             <label
                             className='survey-card-description'
@@ -82,17 +87,18 @@ export default function SurveyCard() {
                     variant='primary'
                     size='icon'
                     >
-                        P
+                        <MailIcon size={24} className='ms-2 mt-2'/>
                     </Button>
                     <Button
                     variant='primary'
                     size='icon'
                     >
-                        D
+                        <DownloadIcon size={24} className='ms-2 mt-2'/>
                     </Button>
                     <Button
                     variant='secondary'
                     >
+                        <EyeIcon size={24}/>
                         Görüntüle
                     </Button>
                 </div>

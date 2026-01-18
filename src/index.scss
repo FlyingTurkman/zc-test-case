@@ -1,6 +1,7 @@
 $primary-dark: #161F3C;
 $custom-danger: #DB0D15;
 $custom-primary: #273D89;
+$custom-muted: #F0F0F3;
 
 @use "bootstrap/scss/bootstrap" with (
     $primary: $custom-primary,
@@ -10,11 +11,12 @@ $custom-primary: #273D89;
     $theme-colors: (
         "primary": $custom-primary,
         "primary-dark": $primary-dark,
-        "danger": $custom-danger
+        "danger": $custom-danger,
+        "muted": $custom-muted
     )
 );
 
-$muted: #676A73;
+
 
 
 :root {

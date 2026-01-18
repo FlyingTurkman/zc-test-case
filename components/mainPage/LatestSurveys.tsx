@@ -1,6 +1,8 @@
 import Button from '../ui/Button'
 import SurveyCard from './SurveyCard'
 import recentMagazine from '../../src/assets/son-sayi.png'
+import DownloadIcon from '../icons/DownloadIcon'
+import ArrowRightIcon from '../icons/ArrowRightIcon'
 
 
 
@@ -36,12 +38,12 @@ export default function LatestSurveys() {
                     <Button
                     size='icon'
                     >
-                        D
+                        <DownloadIcon size={24} className='ms-2 mt-2'/>
                     </Button>
                     <Button
                     variant='secondary'
                     >
-                        Görüntüle
+                        Görüntüle <ArrowRightIcon/>
                     </Button>
                 </div>
             </div>
@@ -66,7 +68,7 @@ export default function LatestSurveys() {
                         </label>
                     </div>
                     <Button>
-                        Tümünü Görüntüle
+                        Tümünü Görüntüle <ArrowRightIcon/>
                     </Button>
                 </div>
                 <SurveyCard/>
