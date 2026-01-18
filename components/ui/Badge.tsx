@@ -6,7 +6,7 @@ import { cn } from "../../lib/cn"
 
 
 export type BadgeProps = HTMLAttributes<HTMLDivElement> & {
-    variant?: 'primary' | 'secondary' | 'teal' | 'orange' | 'green'
+    variant?: 'primary' | 'secondary' | 'teal' | 'orange' | 'green' | 'outline'
 }
 
 
@@ -21,7 +21,8 @@ export default function Badge( { className, variant = 'primary', ...props }: Bad
             "bdg-secondary": variant == 'secondary',
             "bdg-orange": variant == 'orange',
             "bdg-green": variant == 'green',
-            "bdg-teal": variant == 'teal'
+            "bdg-teal": variant == 'teal',
+            "bdg-outline": variant == 'outline'
         })}
         {...props}
         />
