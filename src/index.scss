@@ -2,7 +2,10 @@
     $primary: #273D89,
     $secondary: #EBEFFF,
     $body-bg: #F5F5F5,
+    $danger: #DB0D15,
 );
+
+$muted: #676A73;
 
 :root {
     --bs-primary: #273D89;
@@ -313,4 +316,19 @@ main > .about-section {
     position: absolute;
     right: 3%;
     top: -20%
+}
+
+.survey-card-description {
+    font-size: 16px;
+    line-height: 25px;
+    color: #2A2C31;
+}
+
+.survey-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.survey-content {
+    margin-bottom: 100px;
 }
