@@ -1,7 +1,7 @@
 @use "bootstrap/scss/bootstrap" with (
     $primary: #273D89,
     $secondary: #EBEFFF,
-    $body-bg: #ffffff,
+    $body-bg: #F5F5F5,
 );
 
 :root {
@@ -23,11 +23,20 @@
     --bs-btn-danger-text: #FFFFFF !important;
     --bs-btn-danger-hover: #9D0006 !important;
     --bs-btn-danger-hover-text: #FFFFFF !important;
-    --bs-badge-primary: #112053 !important;
-    --bs-badge-primary-text: #fff !important;
-    --bs-badge-secondary: #273D89 !important;
-    --bs-badge-secondary-text: #fff !important;
-    --bs-badge-secondary-text: #fff !important;
+    --bs-bdg-primary: #112053 !important;
+    --bs-bdg-primary-text: #fff !important;
+    --bs-bdg-secondary: #273D89 !important;
+    --bs-bdg-secondary-text: #fff !important;
+    --bs-bdg-teal: #00C3D0 !important;
+    --bs-bdg-teal-text: #fff !important;
+    --bs-bdg-orange: #DE8536 !important;
+    --bs-bdg-orange-text: #fff !important;
+    --bs-bdg-green: #A8B95E !important;
+    --bs-bdg-green-text: #fff !important;
+}
+
+html {
+    background-color: #F5F5F5;
 }
 
 a {
@@ -158,6 +167,41 @@ h6 {
     padding-bottom: 1px !important;
 }
 
+.bdg-primary {
+    background-color: var(--bs-bdg-primary);
+    color: var(--bs-bdg-primary-text);
+    padding: 1px 8px 1px 8px !important;
+    border-radius: 15px;
+}
+
+.bdg-secondary {
+    background-color: var(--bs-bdg-secondary);
+    color: var(--bs-bdg-secondary-text);
+    padding: 3px 10px 3px 10px !important;
+    border-radius: 8px;
+}
+
+.bdg-teal {
+    background-color: var(--bs-bdg-teal);
+    color: var(--bs-bdg-teal-text);
+    padding: 1px 8px 1px 8px !important;
+    border-radius: 15px;
+}
+
+.bdg-orange {
+    background-color: var(--bs-bdg-orange);
+    color: var(--bs-bdg-orange-text);
+    padding: 3px 10px 3px 10px !important;
+    border-radius: 8px;
+}
+
+.bdg-green {
+    background-color: var(--bs-bdg-green);
+    color: var(--bs-bdg-green-text);
+    padding: 3px 10px 3px 10px !important;
+    border-radius: 8px;
+}
+
 .logo {
     border-top-right-radius: 100px;
     width: 381px;
@@ -225,4 +269,39 @@ h6 {
     right: 12.5%;
     top: 100%;
     transform: translateY(-50%);
+}
+
+main > .about-section {
+    margin-top: 100px;
+}
+
+.about-description {
+    color: #676A73;
+    line-height: 25px;
+    font-size: 22px;
+}
+
+.about-p {
+    color: #2A2C31;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 33%;
+  min-width: 0;
+  padding: 12px;
+}
+
+.carousel-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

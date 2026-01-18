@@ -16,8 +16,12 @@ export type BadgeProps = HTMLAttributes<HTMLDivElement> & {
 export default function Badge( { className, variant = 'primary', ...props }: BadgeProps) {
     return (
         <div
-        className={cn("py-px px-2 rounded-pill", className, {
-            "bg-[#1a1a1a]": variant == 'primary',
+        className={cn( className, {
+            "bdg-primary": variant == 'primary',
+            "bdg-secondary": variant == 'secondary',
+            "bdg-orange": variant == 'orange',
+            "bdg-green": variant == 'green',
+            "bdg-teal": variant == 'teal'
         })}
         {...props}
         />
