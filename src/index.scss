@@ -239,10 +239,6 @@ h6 {
     background-size: cover;
 }
 
-.hero > .hero-content {
-
-}
-
 .hero-content > .hero-header-1 {
     color: #DAEFFF;
     font-weight: bold;
@@ -304,4 +300,17 @@ main > .about-section {
 .carousel-content {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.send-survey {
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.survey-image {
+    position: absolute;
+    right: 3%;
+    top: -20%
 }

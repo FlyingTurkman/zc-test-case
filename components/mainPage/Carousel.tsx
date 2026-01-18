@@ -3,7 +3,6 @@ import { useEffect } from "react"
 import Card from '../ui/Card'
 import dergiPreview from '../../src/assets/dergi-preview.png'
 import Badge from '../ui/Badge'
-import H2 from "../ui/H2"
 import Button from "../ui/Button"
 
 
