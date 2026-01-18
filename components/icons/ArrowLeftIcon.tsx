@@ -1,4 +1,4 @@
-import { IconProps } from "./ArrowDownIcon";
+import { type IconProps } from "./ArrowDownIcon";
 
 
 
