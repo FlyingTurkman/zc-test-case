@@ -383,3 +383,13 @@ footer {
 .promotion-icon {
     transform: rotate(-45deg);
 }
+
+.footer-icon {
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%; 
+    aspect-ratio: 1/1;
+    padding: 8px;
+}
