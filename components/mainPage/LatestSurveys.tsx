@@ -20,8 +20,13 @@ export default function LatestSurveys() {
         className="container p-0 mt-5 d-flex flex-row gap-3 survey-content"
         >
             <div
-            className="d-flex flex-column gap-3 shadow-lg p-2 bg-white rounded-4"
+            className="d-flex flex-column gap-3 shadow-lg p-2 bg-white rounded-4 position-relative"
             >
+                <div
+                className='latest-magazine-content'
+                >
+                    Son Sayı
+                </div>
                 <img
                 src={recentMagazine}
                 />

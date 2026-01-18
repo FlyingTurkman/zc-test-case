@@ -332,3 +332,21 @@ main > .about-section {
 .survey-content {
     margin-bottom: 100px;
 }
+
+.latest-magazine-content {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background: var(--bs-btn-danger);
+    top: 50%;
+    left: 0;
+    padding: 15px 27px 15px 27px;
+    transform: rotate(-90deg);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transform-origin: left top;
+    width: 155px;
+    height: 65px;
+    text-align: center;
+}
