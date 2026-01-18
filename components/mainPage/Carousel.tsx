@@ -4,10 +4,13 @@ import Card from '../ui/Card'
 import dergiPreview from '../../src/assets/dergi-preview.png'
 import Badge from '../ui/Badge'
 import Button from "../ui/Button"
-
-
-
-
+import EyeIcon from '../icons/EyeIcon'
+import DownloadIcon from '../icons/DownloadIcon'
+import ArrowRightIcon from "../icons/ArrowRightIcon"
+import CalendarIcon from '../icons/CalendarIcon'
+import MonitorIcon from '../icons/MonitorIcon'
+import PDFIcon from '../icons/PDFIcon'
+import VolumeIcon from '../icons/VolumeIcon'
 
 
 
@@ -45,7 +48,7 @@ export default function Carousel() {
                                 className="d-flex flex-row align-items-start justify-content-between w-100"
                                 >
                                     <div>
-                                        pdf
+                                        <PDFIcon size={20}/>
                                     </div>
                                     <Badge
                                     variant="teal"
@@ -70,21 +73,22 @@ export default function Carousel() {
                                     className="d-flex"
                                     >
                                         <label>
-                                            Cilt: <b>1</b>
+                                            <VolumeIcon size={18}/> Cilt: <b>1</b>
                                         </label>
                                     </div>
                                     <div
                                     className="d-flex"
                                     >
                                         <label>
-                                            Sayı: <b>1</b>
+                                            
+                                            <MonitorIcon size={18}/> Sayı: <b>1</b>
                                         </label>
                                     </div>
                                     <div
                                     className="d-flex"
                                     >
                                         <label>
-                                            <b>Aralık 2022</b>
+                                            <CalendarIcon size={18}/> <b>Aralık 2022</b>
                                         </label>
                                     </div>
                                 </div>
@@ -95,17 +99,17 @@ export default function Carousel() {
                                     variant="secondary"
                                     size="icon"
                                     >
-                                        E
+                                        <EyeIcon size={24}/>
                                     </Button>
                                     <Button
                                     size="icon"
                                     >
-                                        D
+                                        <DownloadIcon size={24} className="ms-2 mt-2"/>
                                     </Button>
                                     <Button
                                     size="icon"
                                     >
-                                        G
+                                        <ArrowRightIcon size={16}/>
                                     </Button>
                                 </div>
                             </Card.Content>
