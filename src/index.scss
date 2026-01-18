@@ -302,10 +302,15 @@ h6 {
 
 .hero {
     width: 100%;
-    aspect-ratio: 1728/750;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (min-width: 992px) {
+    .hero {
+        aspect-ratio: 1728/750;
+    }
 }
 
 .hero-content > .hero-header-1 {
@@ -329,11 +334,20 @@ h6 {
     font-size: 18px;
 }
 
-.hero > .hero-image {
-    position: absolute;
-    right: 12.5%;
-    top: 100%;
-    transform: translateY(-50%);
+.hero-image {
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: translateY(0);
+}
+
+@media (min-width: 992px) {
+    .hero-image {
+        position: absolute;
+        right: 12.5%;
+        top: 100%;
+        transform: translateY(-50%);
+    }
 }
 
 main > .about-section {
