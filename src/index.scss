@@ -1,11 +1,21 @@
+$primary-dark: #161F3C;
+$custom-danger: #DB0D15;
+$custom-primary: #273D89;
+
 @use "bootstrap/scss/bootstrap" with (
-    $primary: #273D89,
+    $primary: $custom-primary,
     $secondary: #EBEFFF,
     $body-bg: #F5F5F5,
-    $danger: #DB0D15,
+    $danger: $custom-danger,
+    $theme-colors: (
+        "primary": $custom-primary,
+        "primary-dark": $primary-dark,
+        "danger": $custom-danger
+    )
 );
 
 $muted: #676A73;
+
 
 :root {
     --bs-primary: #273D89;
@@ -36,6 +46,7 @@ $muted: #676A73;
     --bs-bdg-orange-text: #fff !important;
     --bs-bdg-green: #A8B95E !important;
     --bs-bdg-green-text: #fff !important;
+    --bs-border: #ACB1C6 !important;
 }
 
 html {
@@ -349,4 +360,20 @@ main > .about-section {
     width: 155px;
     height: 65px;
     text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-top-content {
+    padding-top: 55px;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: var(--bs-border);
 }
