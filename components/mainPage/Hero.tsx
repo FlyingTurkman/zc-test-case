@@ -2,9 +2,9 @@ import bgImage from '../../src/assets/hero-bg.png'
 import Button from '../ui/Button'
 import heroImage from '../../src/assets/dergi.png'
 import ArrowRightIcon from '../icons/ArrowRightIcon'
-
-
-
+import VolumeIcon from '../icons/VolumeIcon'
+import MonitorIcon from '../icons/MonitorIcon'
+import CalendarIcon from '../icons/CalendarIcon'
 
 
 
@@ -52,21 +52,21 @@ export default function Hero() {
                         className='d-flex flex-row align-items-center gap-1'
                         >
                             <label>
-                                Cilt: <b>2</b>
+                                <VolumeIcon size={16}/> Cilt: <b>2</b>
                             </label>
                         </div>
                         <div
                         className='d-flex flex-row align-items-center gap-1'
                         >
                             <label>
-                                Sayı: <b>7</b>
+                                <MonitorIcon size={18}/> Sayı: <b>7</b>
                             </label>
                         </div>
                         <div
                         className='d-flex flex-row align-items-center gap-1'
                         >
                             <label>
-                                <b>Haziran 2025</b>
+                                <CalendarIcon size={18}/> <b>Haziran 2025</b>
                             </label>
                         </div>
                     </div>
