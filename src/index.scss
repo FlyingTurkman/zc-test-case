@@ -402,11 +402,33 @@ main > .about-section {
     margin-bottom: 100px;
 }
 
+
 .survey-image {
     position: absolute;
     right: 3%;
     top: -20%
 }
+
+@media (max-width: 992px) {
+    .survey-image {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    .survey-left-image {
+        position: absolute;
+        width: 75%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .survey-content {
+        margin-top: 20px;
+    }
+}
+
+
 
 .survey-card-description {
     font-size: 16px;
