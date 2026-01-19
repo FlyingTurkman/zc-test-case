@@ -22,7 +22,7 @@ export default function Footer() {
             className="bg-primary-dark text-white"
             >
                 <div
-                className="d-flex flex-row container footer-top-content"
+                className="d-flex flex-column flex-lg-row container footer-top-content gap-lg-0 gap-3"
                 >
                     <div
                     className="d-flex flex-row align-items-center gap-3 w-100"

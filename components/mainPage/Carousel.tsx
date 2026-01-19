@@ -41,7 +41,7 @@ export default function Carousel() {
         className="container carousel-content"
         >
             <div
-            className="d-flex flex-row align-align-items-end gap-5"
+            className="d-flex flex-row align-align-items-end justify-content-lg-start justify-content-between gap-5"
             >
                 <div
                 className="d-flex flex-column gap-1"
@@ -93,7 +93,7 @@ export default function Carousel() {
                                     <Card.Image>
                                         <img
                                         src={dergiPreview}
-                                        className="object-fit-contain"
+                                        className="object-fit-contain w-100"
                                         />
                                     </Card.Image>
                                     <Card.Content
@@ -149,7 +149,7 @@ export default function Carousel() {
                                             </div>
                                         </div>
                                         <div
-                                        className="d-flex flex-row align-items-center gap-1 ms-auto"
+                                        className="d-flex flex-row align-items-center justify-content-between gap-1 ms-auto"
                                         >
                                             <Button
                                             variant="secondary"

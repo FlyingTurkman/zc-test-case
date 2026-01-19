@@ -31,10 +31,10 @@ export default function SurveyCard() {
                 </Badge>
             </div>
             <div
-            className='d-flex flex-row align-items-center justify-content-between w-100'
+            className='d-flex flex-column flex-lg-row align-items-center justify-content-between w-100'
             >
                 <div
-                className='d-flex flex-column gap-1'
+                className='d-flex flex-column gap-2 gap-lg-1'
                 >
                     <div
                     className='d-flex flex-row align-items-center gap-2'
@@ -47,7 +47,7 @@ export default function SurveyCard() {
                         </label>
                     </div>
                     <div
-                    className='d-flex flex-row align-items-center gap-2 '
+                    className='d-flex flex-column flex-lg-row align-items-lg-center align-items-start gap-2 '
                     >
                         <div
                         className='d-flex flex-row align-items-center gap-1'
@@ -81,7 +81,7 @@ export default function SurveyCard() {
                     </div>
                 </div>
                 <div
-                className='d-flex flex-row gap-2'
+                className='d-flex flex-row gap-2 my-lg-0 my-2'
                 >
                     <Button
                     variant='primary'

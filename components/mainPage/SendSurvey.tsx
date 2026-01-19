@@ -18,20 +18,20 @@ export default function SendSurvey() {
 
     return (
         <div
-        className="send-survey container p-0 d-flex flex-row position-relative rounded-5"
+        className="send-survey container p-0 d-flex flex-column flex-lg-row position-relative rounded-5 overflow-hidden"
         style={{
             backgroundImage: `url(${surveyBg})`
         }}
         >
             <div
-            className='d-flex w-100 align-items-center justify-content-center'
+            className='d-flex w-100 align-items-center justify-content-center survey-left-image'
             >
                 <img
                 src={surveyLeft}
                 />
             </div>
             <div
-            className='d-flex flex-column gap-2 w-100 align-items-center justify-content-center'
+            className='d-flex flex-column gap-2 w-100 align-items-center justify-content-center z-3 survey-content'
             >
                 <img
                 src={promotion}

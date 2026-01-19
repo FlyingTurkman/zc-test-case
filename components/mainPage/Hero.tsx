@@ -25,7 +25,7 @@ export default function Hero() {
 
             {/* Content */}
             <div
-            className='d-flex container p-0 m-0 mx-auto flex-row align-items-center h-100 text-white'
+            className='d-flex container p-lg-0 m-0 mx-auto flex-column flex-lg-row align-items-center h-100 text-white'
             >
                 <div
                 className='d-flex flex-column w-100 hero-content'
@@ -80,18 +80,19 @@ export default function Hero() {
                 <div
                 className='d-flex w-100'
                 >
-
+                    {/* Image */}
+                    <div
+                    className='hero-image'
+                    >
+                        <img
+                        src={heroImage}
+                        className='w-100'
+                        />
+                    </div>
                 </div>
             </div>
 
-            {/* Image */}
-            <div
-            className='position-absolute hero-image'
-            >
-                <img
-                src={heroImage}
-                />
-            </div>
+            
         </div>
     )
 }
