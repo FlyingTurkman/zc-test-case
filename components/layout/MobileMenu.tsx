@@ -35,6 +35,7 @@ export default function MobileMenu() {
             onClick={() => {
                 setIsOpen((prev) => !prev)
             }}
+            aria-label='Menü'
             >
                 <MenuIcon size={18}/>
             </Button>
@@ -48,32 +49,38 @@ export default function MobileMenu() {
                     <a
                     href='/'
                     className='text-primary'
+                    aria-label='Ana Sayfa'
                     >
                         <HomeIcon size={24} className='me-2'/> Ana Sayfa
                     </a>
                     <div className='separator'></div>
                     <a
                     href='#'
+                    aria-label='Amaç ve kapsam'
                     >
                         Amaç ve Kapsam
                     </a>
                     <a
                     href='#'
+                    aria-label='Etik ilkeler ve yayın politikası'
                     >
                         Etik İlkeler ve Yayın Politikası
                     </a>
                     <a
                     href='#'
+                    aria-label='Makale çağrıları'
                     >
                         Makale Çağrıları
                     </a>
                     <a
                     href='#'
+                    aria-label='Sayılar'
                     >
                         Sayılar
                     </a>
                     <a
                     href='#'
+                    aria-label='İletişim'
                     >
                         İletişim
                     </a>
@@ -81,6 +88,7 @@ export default function MobileMenu() {
                     <a
                     href='#'
                     className={buttonVariants({ variant: 'secondary' })}
+                    aria-label='Dergi kurulu'
                     >
                         <span>
                             <PeopleIcon size={24} className='me-2'/> Dergi Kurulu
@@ -89,6 +97,7 @@ export default function MobileMenu() {
                     <a
                     href='#'
                     className={buttonVariants({ variant: 'alternative' })}
+                    aria-label='Yazar rehberi'
                     >
                         <span>
                             <AuthorIcon size={24} className='me-2'/> Yazar Rehberi

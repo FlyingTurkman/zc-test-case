@@ -1,6 +1,6 @@
-import bgImage from '../../src/assets/hero-bg.png'
+import bgImage from '../../src/assets/hero-bg.webp'
 import Button from '../ui/Button'
-import heroImage from '../../src/assets/dergi.png'
+import heroImage from '../../src/assets/dergi.webp'
 import ArrowRightIcon from '../icons/ArrowRightIcon'
 import VolumeIcon from '../icons/VolumeIcon'
 import MonitorIcon from '../icons/MonitorIcon'
@@ -22,6 +22,8 @@ export default function Hero() {
             backgroundImage: `url(${bgImage})`
         }}
         >
+            <link rel='preload' fetchPriority='high' as='image' href={heroImage}/>
+            <link rel='preload' fetchPriority='high' as='image' href={bgImage}/>
 
             {/* Content */}
             <div
@@ -73,6 +75,7 @@ export default function Hero() {
                     <Button
                     variant='secondary'
                     className='me-auto my-5'
+                    aria-label='Dergiyi görüntüle'
                     >
                         Dergiyi Görüntüle <ArrowRightIcon/>
                     </Button>
@@ -87,6 +90,7 @@ export default function Hero() {
                         <img
                         src={heroImage}
                         className='w-100'
+                        alt='Arkaplan'
                         />
                     </div>
                 </div>

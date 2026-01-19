@@ -27,6 +27,7 @@ export default function Header() {
                 >
                     <img
                     src={logo}
+                    alt='Logo'
                     />
                 </div>
                 <div
@@ -38,6 +39,7 @@ export default function Header() {
                         <a
                         href='mailto:profuture@gmail.com'
                         className='text-white d-flex flex-row gap-2 align-items-center'
+                        aria-label='Mail gönder'
                         >
                             <MessageIcon
                             size={18}
@@ -65,6 +67,7 @@ export default function Header() {
                     >
                         <a
                         href='/'
+                        aria-label='Ana Sayfa'
                         >
                             <HomeIcon size={24} color='#A8B95E'/>
                         </a>
@@ -73,32 +76,38 @@ export default function Header() {
                         >
                             <a
                             href='#'
+                            aria-label='Amaç ve kapsam'
                             >
                                 Amaç ve Kapsam
                             </a>
                             <a
                             href='#'
+                            aria-label='Etik İlkeler ve Yayın Politikası'
                             >
                                 Etik İlkeler ve Yayın Politikası
                             </a>
                             <a
                             href='#'
+                            aria-label='Makale Çağrıları'
                             >
                                 Makale Çağrıları
                             </a>
                             <a
                             href='#'
+                            aria-label='Sayılar'
                             >
                                 Sayılar
                             </a>
                             <a
                             href='#'
+                            aria-label='İletişim'
                             >
                                 İletişim
                             </a>
                             <a
                             href='#'
                             className={buttonVariants({ variant: 'secondary' })}
+                            aria-label='Dergi kurulu'
                             >
                                 <PeopleIcon size={24}/>
                                 Dergi Kurulu
@@ -106,6 +115,7 @@ export default function Header() {
                             <a
                             href='#'
                             className={buttonVariants({ variant: 'alternative' })}
+                            aria-label='Yazar rehberi'
                             >
                                 <AuthorIcon size={24}/>
                                 Yazar Rehberi
@@ -113,6 +123,7 @@ export default function Header() {
                             <a
                             href='#'
                             className={buttonVariants({ variant: 'primary', size: 'icon' })}
+                            aria-label='Ara'
                             >
                                 <SearchIcon size={24} className='d-flex ms-1 mt-1'/>
                             </a>
@@ -132,12 +143,14 @@ export default function Header() {
                     <img
                     src={logo}
                     className='mobile-logo'
+                    alt='Logo'
                     />
                 </a>
                 <Button
                 size='icon'
                 variant='primary'
                 className='mobile-icon'
+                aria-label='Ara'
                 >
                     <SearchIcon size={24} className='mt-1 ms-1'/>
                 </Button>

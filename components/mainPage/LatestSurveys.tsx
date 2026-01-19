@@ -1,6 +1,6 @@
 import Button from '../ui/Button'
 import SurveyCard from './SurveyCard'
-import recentMagazine from '../../src/assets/son-sayi.png'
+import recentMagazine from '../../src/assets/son-sayi.webp'
 import DownloadIcon from '../icons/DownloadIcon'
 import ArrowRightIcon from '../icons/ArrowRightIcon'
 
@@ -31,17 +31,20 @@ export default function LatestSurveys() {
                 </div>
                 <img
                 src={recentMagazine}
+                alt='Son sayı'
                 />
                 <div
                 className='d-flex flex-row align-items-center justify-content-center gap-3'
                 >
                     <Button
                     size='icon'
+                    aria-label='İndir'
                     >
                         <DownloadIcon size={24} className='ms-2 mt-2'/>
                     </Button>
                     <Button
                     variant='secondary'
+                    aria-label='Görüntüle'
                     >
                         Görüntüle <ArrowRightIcon/>
                     </Button>
@@ -67,7 +70,9 @@ export default function LatestSurveys() {
                             Güncel Yazılar
                         </label>
                     </div>
-                    <Button>
+                    <Button
+                    aria-label='Tümünü görüntüle'
+                    >
                         Tümünü Görüntüle <ArrowRightIcon/>
                     </Button>
                 </div>

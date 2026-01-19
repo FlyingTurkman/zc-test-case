@@ -42,6 +42,7 @@ export default function AboutSection() {
                 <a
                 href='#'
                 className={buttonVariants({ variant: 'primary', className: 'me-auto' })}
+                aria-label='Detay'
                 >
                     Detay <ArrowRightIcon className='ms-4'/>
                 </a>

@@ -1,7 +1,7 @@
 import useEmblaCarousel from "embla-carousel-react"
 import { useCallback, useEffect, useState } from "react"
 import Card from '../ui/Card'
-import dergiPreview from '../../src/assets/dergi-preview.png'
+import dergiPreview from '../../src/assets/dergi-preview.webp'
 import Badge from '../ui/Badge'
 import Button from "../ui/Button"
 import EyeIcon from '../icons/EyeIcon'
@@ -66,6 +66,7 @@ export default function Carousel() {
                     onClick={() => {
                         emblaApi?.scrollPrev()
                     }}
+                    aria-label='Geri'
                     >
                         <ArrowLeftIcon size={16}/>
                     </ToggleButton>
@@ -75,6 +76,7 @@ export default function Carousel() {
                     onClick={() => {
                         emblaApi?.scrollNext()
                     }}
+                    aria-label='İleri'
                     >
                         <ArrowRightIcon size={16}/>
                     </ToggleButton>
@@ -94,6 +96,7 @@ export default function Carousel() {
                                         <img
                                         src={dergiPreview}
                                         className="object-fit-contain w-100"
+                                        alt='Dergi'
                                         />
                                     </Card.Image>
                                     <Card.Content
@@ -154,16 +157,19 @@ export default function Carousel() {
                                             <Button
                                             variant="secondary"
                                             size="icon"
+                                            aria-label="Göz at"
                                             >
                                                 <EyeIcon size={24}/>
                                             </Button>
                                             <Button
                                             size="icon"
+                                            aria-label="İndir"
                                             >
                                                 <DownloadIcon size={24} className="ms-2 mt-2"/>
                                             </Button>
                                             <Button
                                             size="icon"
+                                            aria-label="Git"
                                             >
                                                 <ArrowRightIcon size={16}/>
                                             </Button>

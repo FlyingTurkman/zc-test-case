@@ -86,17 +86,20 @@ export default function SurveyCard() {
                     <Button
                     variant='primary'
                     size='icon'
+                    aria-label='Mail olarak gönder'
                     >
                         <MailIcon size={24} className='ms-2 mt-2'/>
                     </Button>
                     <Button
                     variant='primary'
                     size='icon'
+                    aria-label='İndir'
                     >
                         <DownloadIcon size={24} className='ms-2 mt-2'/>
                     </Button>
                     <Button
                     variant='secondary'
+                    aria-label='Görüntüle'
                     >
                         <EyeIcon size={24}/>
                         Görüntüle
