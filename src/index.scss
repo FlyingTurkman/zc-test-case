@@ -400,8 +400,12 @@ main > .about-section {
     background-size: cover;
     margin-top: 100px;
     margin-bottom: 100px;
+    overflow: visible;
 }
 
+.survey-left-image {
+    padding: 0;
+}
 
 .survey-image {
     position: absolute;
@@ -409,7 +413,13 @@ main > .about-section {
     top: -20%
 }
 
+
 @media (max-width: 992px) {
+
+    .send-survey {
+        overflow: hidden;
+    }
+
     .survey-image {
         position: relative;
         right: 0;
