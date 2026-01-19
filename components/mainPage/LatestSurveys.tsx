@@ -19,7 +19,7 @@ export default function LatestSurveys() {
 
     return (
         <div
-        className="container p-0 mt-5 d-flex flex-row gap-3 survey-content"
+        className="container p-2 p-lg-0 mt-5 d-flex flex-column flex-lg-row gap-3 survey-content"
         >
             <div
             className="d-flex flex-column gap-3 shadow-lg p-2 bg-white rounded-4 position-relative"
@@ -51,7 +51,7 @@ export default function LatestSurveys() {
             className='d-flex flex-column gap-2 w-100 pt-4'
             >
                 <div
-                className='d-flex flex-row align-items-start justify-content-between'
+                className='d-flex flex-column flex-lg-row align-items-start justify-content-between'
                 >
                     <div
                     className='d-flex flex-column gap-2'
