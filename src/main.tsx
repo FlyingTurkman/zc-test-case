@@ -8,6 +8,10 @@ import Footer from '../components/layout/Footer.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <head>
+      <meta name='description' content='ZC-Test-Case'/>
+      <title>ZC Test Case</title>
+    </head>
     <Header/>
     <App />
     <Footer/>
