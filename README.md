@@ -11,3 +11,7 @@ npm run dev
 ```
 
 yapmanız yeterlidir.
+
+## Masaüstü değerlendirme sonuçları
+
+## Mobil değerlendirme sonuçları
