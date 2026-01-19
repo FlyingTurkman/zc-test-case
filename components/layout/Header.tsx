@@ -13,7 +13,6 @@ import MobileMenu from '../layout/MobileMenu'
 
 
 
-
 export default function Header() {
 
     return (
@@ -34,8 +33,12 @@ export default function Header() {
                 className='d-flex flex-column w-100 !h-100'
                 >
                     <div
-                    className="d-flex flex-row align-items-center justify-content-between nav-top w-100"
-                    >
+                    className="d-flex flex-row align-items-center justify-content-between nav-top w-100 position-relative">
+                        <div
+                        className='nav-curve'
+                        >
+                            
+                        </div>
                         <a
                         href='mailto:profuture@gmail.com'
                         className='text-white d-flex flex-row gap-2 align-items-center'
