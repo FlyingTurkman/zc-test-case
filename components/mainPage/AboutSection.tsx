@@ -24,7 +24,7 @@ export default function AboutSection() {
         className="container about-section"
         >
             <div
-            className="d-flex flex-column gap-2 w-50"
+            className="d-flex flex-column gap-2 w-lg-50"
             >
                 <label
                 className="about-description"
