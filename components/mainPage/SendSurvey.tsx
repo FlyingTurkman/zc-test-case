@@ -18,7 +18,7 @@ export default function SendSurvey() {
 
     return (
         <div
-        className="send-survey container p-0 d-flex flex-column flex-lg-row position-relative rounded-5"
+        className="send-survey container p-0 d-flex flex-column flex-lg-row position-relative rounded-5 overflow-hidden"
         style={{
             backgroundImage: `url(${surveyBg})`
         }}
